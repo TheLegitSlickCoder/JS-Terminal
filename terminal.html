@@ -1,0 +1,66 @@
+<!doctype html>
+<title>JS Terminal</title>
+<meta charset="utf-8">
+<script src="script.js"></script>
+
+<!-- CSS -->
+<style>
+    #title {
+        color: rgb(255, 100, 100);
+        font-family: arial;
+        text-align: center;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p, li {
+        text-align: center;
+        font-family: arial;
+    }
+    
+    div {
+        text-align: center;
+    }
+    
+    textarea, input {
+        font-family: arial;
+        font-size: 14px;
+    }
+    
+    #commands {
+        border: none;
+        color: white;
+        background-color: rgb(70, 70, 70);
+        width: 430px;
+        height: 150px;
+        color: white;
+        background-color: rgb(70, 70, 70);
+    }
+    
+    button {
+        border: none;
+        color: white;
+        background-color: rgb(100, 200, 100);
+        font-size: 20px;
+    }
+    
+    button:hover {
+        background-color: rgb(100, 150, 100);
+    }
+    
+    body {
+        background-color: rgb(50, 50, 50);
+    }
+</style>
+
+<!-- HTML -->
+<html>
+    <h1 id="title">JS Terminal</h1>
+    
+    <br>
+    <br>
+    
+    <div id="content">
+        <textarea id="commands", placeholder=">", spellcheck="false"></textarea>
+        <br>
+        <button onclick="run()">Run Code</button>
+    </div>
+</html>
